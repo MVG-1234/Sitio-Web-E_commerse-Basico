@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>MiTienda — Catálogo</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body data-page="catalogo">
+
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Ir al inicio">TodoTec</a>
+  <nav aria-label="Navegación principal">
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="quienes.html">Quiénes somos</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito <span id="cartCount" class="badge" aria-label="Artículos en carrito">0</span></a></li>
+      <li><a href="busqueda.html">Búsqueda</a></li>
+    </ul>
+  </nav>
+</header>
+
+      <main class="container">
+
+<section>
+  <h1>Catálogo</h1>
+  <div class="catalog-grid">
+    <!-- Producto 1 -->
+    <article class="card">
+      <img src="https://m.media-amazon.com/images/I/41IcucOVbcL._UF894,1000_QL80_.jpg" alt="Audífonos inalámbricos" />
+      <div class="card-body">
+        <h3>Audífonos inalámbricos</h3>
+        <p class="price" data-price="899">$899.00</p>
+        <button class="add-to-cart" data-name="Audífonos" data-price="899">Agregar al carrito</button>
+      </div>
+    </article>
+    <!-- Producto 2 -->
+    <article class="card">
+      <img src="https://safetydepot.com.mx/cdn/shop/files/Mesadetrabajo1_b4cafa52-24a2-405d-8b39-0b39ab0b3710.jpg?v=1720021404" alt="Camisa de algodón" />
+      <div class="card-body">
+        <h3>Camisa de algodón</h3>
+        <p class="price" data-price="349">$349.00</p>
+        <button class="add-to-cart" data-name="Camisa" data-price="349">Agregar al carrito</button>
+      </div>
+    </article>
+    <!-- Producto 3 -->
+    <article class="card">
+      <img src="https://www.officedepot.com.mx/medias/100105061.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NzU4Nzh8aW1hZ2UvanBlZ3xhR05oTDJnMk1pOHhNVFEzT0RRd01qazVNREV4TUM4eE1EQXhNRFV3TmpFdWFuQm5YekV5TURCbWRIY3xlNDMzOTg5YmJjMzNkMmQ0YWVjODkyNDA2MWI5NzcwNmVhMWQwMzg1MWY5M2VjY2JlNzFlOTNiNzNiZGJiNTg0" alt="Lámpara de escritorio" />
+      <div class="card-body">
+        <h3>Lámpara de escritorio</h3>
+        <p class="price" data-price="499">$499.00</p>
+        <button class="add-to-cart" data-name="Lámpara" data-price="499">Agregar al carrito</button>
+      </div>
+    </article>
+    <!-- Producto 4 -->
+    <article class="card">
+      <img src="https://m.media-amazon.com/images/I/51nzcpOjfKL._UF894,1000_QL80_.jpg" alt="Termo térmico" />
+      <div class="card-body">
+        <h3>Termo térmico</h3>
+        <p class="price" data-price="259">$259.00</p>
+        <button class="add-to-cart" data-name="Termo" data-price="259">Agregar al carrito</button>
+      </div>
+    </article>
+  </div>
+  <p id="catalogMsg" class="muted" aria-live="polite"></p>
+</section>
+
+      </main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> TodoTec — Proyecto académico.</p>
+  <p>Proyecto hecho por estudiantes del <a href="https://www.tuxtla.tecnm.mx/" target="_blank" rel="noopener">Tecnológico Nacional de México Campus Tuxtla Gutiérrez</a></p>
+</footer>
+<script src="script.js" defer></script>
+
+    </body>
+    </html>

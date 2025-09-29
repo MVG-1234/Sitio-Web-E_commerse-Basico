@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>MiTienda — Inicio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body data-page="inicio">
+
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Ir al inicio">TodoTec</a>
+  <nav aria-label="Navegación principal">
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="quienes.html">Quiénes somos</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito <span id="cartCount" class="badge" aria-label="Artículos en carrito">0</span></a></li>
+      <li><a href="busqueda.html">Búsqueda</a></li>
+    </ul>
+  </nav>
+</header>
+
+      <main class="container">
+
+<section class="hero">
+  <img src="https://www.aimprosoft.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/01/How-to-Create-a-Marketplace-Website_Cover.png.webp" alt="Banner destacado de productos" class="hero-img" />
+  <div class="hero-text">
+    <h1>¡Bienvenido a TodoTec!</h1>
+    <p>Descubre nuestras categorías y ofertas.</p>
+  </div>
+</section>
+
+<section aria-labelledby="destacados">
+  <h2 id="destacados">Categorías destacadas</h2>
+  <ul class="pill-list">
+    <li>Electrónica</li>
+    <li>Hogar</li>
+    <li>Ropa</li>
+    <li>Deportes</li>
+    <li>Juguetes</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Mensaje dinámico</h2>
+  <p id="dynamicMessage" class="muted"></p>
+</section>
+
+      </main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> TodoTec — Proyecto académico.</p>
+  <p>Proyecto hecho por estudiantes del <a href="https://www.tuxtla.tecnm.mx/" target="_blank" rel="noopener">Tecnológico Nacional de México Campus Tuxtla Gutiérrez</a></p>
+</footer>
+<script src="script.js" defer></script>
+
+    </body>
+    </html>

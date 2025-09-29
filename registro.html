@@ -1,0 +1,77 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>MiTienda — Registro</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body data-page="registro">
+
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Ir al inicio">TodoTec</a>
+  <nav aria-label="Navegación principal">
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="quienes.html">Quiénes somos</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito <span id="cartCount" class="badge" aria-label="Artículos en carrito">0</span></a></li>
+      <li><a href="busqueda.html">Búsqueda</a></li>
+    </ul>
+  </nav>
+</header>
+
+      <main class="container">
+
+<section aria-labelledby="form-registro">
+  <h1 id="form-registro">Crea tu cuenta</h1>
+<form id="registerForm" novalidate>
+  <label>Nombre
+    <input type="text" name="nombre" id="nombre" required minlength="2" maxlength="60" />
+    <span class="error" id="error-nombre"></span>
+  </label>
+
+  <label>Email
+    <input type="email" name="email" id="email" required />
+    <span class="error" id="error-email"></span>
+  </label>
+
+  <label>Contraseña
+    <input type="password" name="password" id="password" required minlength="6" maxlength="30" />
+    <span class="error" id="error-password"></span>
+  </label>
+
+  <label>Fecha de nacimiento
+    <input type="date" name="nacimiento" id="nacimiento" required />
+    <span class="error" id="error-nacimiento"></span>
+  </label>
+
+  <label>Teléfono
+    <input type="tel" name="telefono" id="telefono" required pattern="[0-9\s\-\+]{8,15}" />
+    <span class="error" id="error-telefono"></span>
+  </label>
+
+  <label class="terms">
+    <input type="checkbox" id="termsCheckbox" required />
+    Acepto los términos y condiciones
+  </label>
+
+  <button id="submitBtn" type="submit" disabled>Crear cuenta</button>
+  <p id="registerMsg" class="muted" role="status" aria-live="polite"></p>
+</form>
+</section>
+
+      </main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> TodoTec — Proyecto académico.</p>
+  <p>Proyecto hecho por estudiantes del <a href="https://www.tuxtla.tecnm.mx/" target="_blank" rel="noopener">Tecnológico Nacional de México Campus Tuxtla Gutiérrez</a></p>
+</footer>
+<script src="script.js" defer></script>
+
+    </body>
+    </html>

@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>MiTienda — Carrito</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body data-page="carrito">
+
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Ir al inicio">TodoTec</a>
+  <nav aria-label="Navegación principal">
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="quienes.html">Quiénes somos</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito <span id="cartCount" class="badge" aria-label="Artículos en carrito">0</span></a></li>
+      <li><a href="busqueda.html">Búsqueda</a></li>
+    </ul>
+  </nav>
+</header>
+
+      <main class="container">
+
+<section>
+  <h1>Carrito de compra</h1>
+  <div class="table-wrapper">
+    <table id="cartTable">
+      <thead>
+        <tr><th>Producto</th><th>Cantidad</th><th>Precio unitario</th><th>Subtotal</th></tr>
+      </thead>
+      <tbody>
+        <tr data-price="899">
+          <td>
+            <img class="thumb" src="https://m.media-amazon.com/images/I/41IcucOVbcL._UF894,1000_QL80_.jpg" alt="Audífonos inalámbricos" />
+            Audífonos inalámbricos
+          </td>
+          <td><input type="number" class="qty" min="0" value="1" /></td>
+          <td>$899.00</td>
+          <td class="subtotal">$899.00</td>
+        </tr>
+        <tr data-price="349">
+          <td>
+            <img class="thumb" src="https://safetydepot.com.mx/cdn/shop/files/Mesadetrabajo1_b4cafa52-24a2-405d-8b39-0b39ab0b3710.jpg?v=1720021404" alt="Camisa de algodón" />
+            Camisa de algodón
+          </td>
+          <td><input type="number" class="qty" min="0" value="2" /></td>
+          <td>$349.00</td>
+          <td class="subtotal">$698.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="right"><strong>Total</strong></td>
+          <td id="cartTotal"><strong>$1,597.00</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</section>
+
+      </main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> TodoTec — Proyecto académico.</p>
+  <p>Proyecto hecho por estudiantes del <a href="https://www.tuxtla.tecnm.mx/" target="_blank" rel="noopener">Tecnológico Nacional de México Campus Tuxtla Gutiérrez</a></p>
+</footer>
+<script src="script.js" defer></script>
+
+    </body>
+    </html>
